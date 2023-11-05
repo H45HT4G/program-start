@@ -129,7 +129,11 @@ namespace Wyscig
 
         static void DisplayAll()
         {
-
+            foreach (Competitor comp in Competitors)
+            {
+                Console.WriteLine($"ID:{comp.id} Nazwsiko: {comp.surName}, {comp.name}");
+            }
+            Console.ReadLine();
         }
 
         static void CloseProgram()
